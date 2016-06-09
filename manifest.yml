@@ -2,7 +2,7 @@
 applications:
 - name: harborinsurance
   instances: 1
-  memory: 256M
+  memory: 512M
   env:
     STRIPE_API_KEY: __STRIPE_API_KEY
     CREDIT_API_KEY: __CREDIT_API_KEY
