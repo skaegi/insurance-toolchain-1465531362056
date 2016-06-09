@@ -15,6 +15,10 @@
     "type": "git",
     "url": "https://github.com/takanabe/react-redux-material_ui-boilerplate.git"
   },
+    "engines": {
+     "node": "5.1.0",
+     "npm": "3.3.12"
+  },
   "keywords": [
     "React",
     "webpack",
