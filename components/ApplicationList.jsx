@@ -3,20 +3,14 @@ import {Link} from 'react-router';
 import _ from 'lodash';
 import numeral from 'numeral';
 
-import mui, {
-    Divider,
-    TextField,
-    SelectField,
-    RaisedButton,
-    MenuItem,
-    Paper,
-    Table,
-    TableHeader,
-    TableHeaderColumn,
-    TableBody,
-    TableRow,
-    TableRowColumn
-} from 'material-ui';
+import TextField from 'material-ui/TextField';
+import SelectField from 'material-ui/SelectField';
+import RaisedButton from 'material-ui/RaisedButton';
+import Divider from 'material-ui/Divider';
+import MenuItem from 'material-ui/MenuItem';
+import Paper from 'material-ui/Paper';
+import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn} from 'material-ui/Table';
+
 
 import { makeFakeApplications } from '../src/helpers';
 
@@ -30,16 +24,10 @@ class ApplicationList extends Component {
         };
     }
 
-    rowSelected(id) {
-        console.log("row selected")
-        this.props.selectApplication(id);
-    }
-
-
 
     render() {
         let applicationRows = this.props.applications.map((application) => {
-            return <ApplicationListItem {...application} selectApplication={this.props.selectApplication}/>;
+            return <ApplicationListItem {...application} key={application._id} selectApplication={this.props.selectApplication}/>;
         });
 
         return(
