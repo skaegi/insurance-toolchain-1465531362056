@@ -38,7 +38,9 @@
     "node-sass": "^3.7.0",
     "nodemon": "^1.9.2",
     "sass-loader": "^3.2.0",
-    "style-loader": "^0.13.1"
+    "style-loader": "^0.13.1",
+    "mocha": "^2.5.1",
+    "chai":"^3.5.0"
   },
   "dependencies": {
     "async": "^2.0.0-rc.5",
@@ -81,9 +83,5 @@
     "webpack": "^1.13.0",
     "webpack-dev-middleware": "^1.2.0",
     "webpack-hot-middleware": "^2.2.0"
-  },
-  "devDependencies": {
-    "mocha": "^2.5.1",
-    "chai":"^3.5.0"
   }
 }
