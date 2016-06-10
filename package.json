@@ -4,7 +4,7 @@
   "description": "A boilerplate for React + Redux + Material UI + ES6 syntax application",
   "main": "server/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "build": "NODE_ENV=production ./node_modules/.bin/webpack --config ./webpack.production.config.js --progress --profile --colors",
     "start": "node server/server.js",
     "server": "node server/server.js",
@@ -83,5 +83,9 @@
     "webpack": "^1.13.0",
     "webpack-dev-middleware": "^1.2.0",
     "webpack-hot-middleware": "^2.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.5.1",
+    "chai":"^3.5.0"
   }
 }
